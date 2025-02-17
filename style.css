@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+}
+#text {
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    min-width: 200px;
+    min-height: 50px;
+    background-color: white;
+    width: 80%;
+    height: 80vh;
+    margin-left: 8%;
+}
+button {
+    margin: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+button:hover{
+    background-color: #ccc;
+}
+#text:empty::before {
+    content: "Write something here...";
+    color: gray;
+    font-style: italic;
+}
+#u{
+    text-decoration: underline;
+}
